@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,7 +33,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men's Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rr-5w-ga3">
-                    <rect key="frame" x="87" y="36" width="200" height="38"/>
+                    <rect key="frame" x="87.5" y="36" width="200" height="38"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="38" id="G5s-La-RYA"/>
                         <constraint firstAttribute="width" constant="200" id="yNm-6n-ecT"/>
@@ -82,13 +83,13 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUj-bL-9mb">
-                    <rect key="frame" x="163" y="281.5" width="48.5" height="104"/>
+                    <rect key="frame" x="163.5" y="281.5" width="48.5" height="104"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="87"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KIr-a3-zfL">
-                    <rect key="frame" x="120" y="471" width="134" height="136"/>
+                    <rect key="frame" x="120.5" y="471" width="134" height="136"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-UY-yvr">
                             <rect key="frame" x="0.0" y="0.0" width="134" height="58"/>
@@ -129,12 +130,16 @@
                 <constraint firstItem="wKF-I0-wwN" firstAttribute="centerY" secondItem="Mg9-gX-3cu" secondAttribute="centerY" id="HNM-eA-fUq"/>
                 <constraint firstItem="wKF-I0-wwN" firstAttribute="width" secondItem="Mg9-gX-3cu" secondAttribute="width" constant="2" id="NSu-76-VD3"/>
                 <constraint firstItem="wKF-I0-wwN" firstAttribute="centerX" secondItem="Mg9-gX-3cu" secondAttribute="centerX" id="RlQ-bs-q7U"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mg9-gX-3cu" secondAttribute="trailing" constant="30" id="ULq-vq-O6e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mg9-gX-3cu" secondAttribute="trailing" constant="30" id="ULq-vq-O6e">
+                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                </constraint>
                 <constraint firstItem="aUj-bL-9mb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XDN-nx-0Qo"/>
                 <constraint firstItem="9Rr-5w-ga3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="adf-Er-2QO"/>
                 <constraint firstItem="Mg9-gX-3cu" firstAttribute="top" secondItem="9Rr-5w-ga3" secondAttribute="bottom" constant="32" id="baW-tI-MtK"/>
                 <constraint firstItem="aUj-bL-9mb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dxY-XL-5Cq"/>
-                <constraint firstItem="Mg9-gX-3cu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="eai-vx-JPG"/>
+                <constraint firstItem="Mg9-gX-3cu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="eai-vx-JPG">
+                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                </constraint>
                 <constraint firstItem="9Rr-5w-ga3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="hdn-ph-jKy"/>
                 <constraint firstItem="KIr-a3-zfL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pMJ-Nk-jdD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KIr-a3-zfL" secondAttribute="bottom" constant="60" id="xAu-r4-Sjp"/>
